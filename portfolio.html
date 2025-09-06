@@ -1,0 +1,219 @@
+<!-- This Portfolio has been Created by Umair(me) and has Skills and projects of Umair, 
+after you copy it make sure to replace my name, skills, socialmedia links 
+and projects with yours. Good Luck and Happy Coding-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Umair — Portfolio</title>
+  <style>
+    :root {
+      /* Light theme colors */
+      --bg: #FEFAE0;
+      --text: #283618;
+      --header-bg: #606C38;
+      --header-text: #FEFAE0;
+      --card-bg: #fff;
+      --card-border: #DDA15E;
+      --button-bg: #BC6C25;
+      --button-text: #fff;
+      --footer-bg: #f1eee2;
+    }
+    body.dark {
+      /* Dark theme overrides */
+      --bg: #283618;
+      --text: #FEFAE0;
+      --header-bg: #606C38;
+      --header-text: #FEFAE0;
+      --card-bg: #3a4520;
+      --card-border: #BC6C25;
+      --button-bg: #DDA15E;
+      --button-text: #283618;
+      --footer-bg: #1f2413;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background:var(--bg);
+      color: var(--text);
+      transition: background .3s, color .3s;
+    }
+    header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 1rem;
+      position: relative;
+      top: 0;
+    }
+    nav { display: flex; gap: 1rem; justify-content: center; align-items:center; flex-wrap: wrap; }
+    nav a { color: var(--header-text); text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 2rem; max-width: 800px; margin: auto; }
+    h1, h2 { margin-top: 0; }
+    .projects, .skills { display: grid; gap: 1rem; }
+    .projects { grid-template-columns: 1fr; }
+    .card {
+      border: 2px solid var(--card-border);
+      padding: 1rem;
+      border-radius: 8px;
+      background: var(--card-bg);
+      transition: background .3s, border .3s;
+    }
+    .skills span {
+      display: inline-block;
+      padding: .3rem .6rem;
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      margin: .2rem;
+      font-size: 0.9rem;
+      background: var(--card-bg);
+    }
+    form { display: grid; gap: .8rem; }
+    input, textarea, button {
+      padding: .6rem;
+      font-size: 1rem;
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      background: var(--card-bg);
+      color: var(--text);
+    }
+    button {
+      background: var(--button-bg);
+      color: var(--button-text);
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover { opacity: .9; }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--footer-bg);
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    footer a { color: var(--text); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: var(--button-bg);
+      color: var(--button-text);
+      cursor: pointer;
+    }
+    #themeToggle {
+      background: var(--button-bg);
+      color: var(--button-text);
+      border: none;
+      padding: .5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="text-align:center;">rudra's Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">Dark</button>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+     Hi,i'm Rudra prasad rout, a passionate B.Tech student in computer science with a strong interest in full stack devlopment and AI solutions. i enjoy building clean, efficient, & user-friendly application that solve real-world problem.
+    </p>
+
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card"><h3>E-commerce website</h3><p>Built a store for a friend</p></div>
+      <div class="card"><h3>High Volume Fintech Trading Dashboard</h3><p>Lightweight analytics dashboard with clean charts.</p></div>
+      <div class="card"><h3>3D Protein Structure Viewer</h3><p>Web-based 3D protein structure visualization tool.</p></div>
+      <div class="card"><h3>Mars Climate Analysis</h3><p>Analysis of Martian Atmosphere using Insight Spacecraft CSV</p></div>
+      <div class="card"><h3>Weather App</h3><p>Minimal weather forecast app.</p></div>
+      <div class="card"><h3>Sticky Dev Notes</h3><p>Browser-based sticky notes for quick snippets.</p></div>
+      <div class="card"><h3>Automation Script</h3><p>Script to automate repetitive dev setup tasks.</p></div>
+      <div class="card"><h3>Chilika algae Growth using Python</h3><p>Studying effect of global warming on algae</p></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>c</span>
+      <span>html.5</span>
+      <span>css</span>
+      <span>core.java</span>
+      <span>javascript</span>
+      <span>UI/UX</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="savedMsg" style="color:green; display:none;"> Message saved offline!</p>
+  </section>
+
+ 
+  <button id="scrollTopBtn">↑ Top</button>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const savedMsg = document.getElementById('savedMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      let messages = JSON.parse(localStorage.getItem('messages')) || [];
+      messages.push({ name, email, message, date: new Date().toLocaleString() });
+      localStorage.setItem('messages', JSON.stringify(messages));
+
+      form.reset();
+      savedMsg.style.display = 'block';
+      setTimeout(() => savedMsg.style.display = 'none', 3000);
+    });
+
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggleBtn.textContent = document.body.classList.contains('dark') ? "Light" : "Dark";
+    });
+
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.onscroll = () => {
+      scrollBtn.style.display = (document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    scrollBtn.onclick = () => {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+  </script>
+</body>
+</html>
